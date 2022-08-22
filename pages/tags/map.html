@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag map</title>
+</head>
+
+<body>
+    <!-- Definição e uso -->
+
+    <section class="definition">
+        <p>A tag &lt;map&gt; é usada para definir uma imagem mapa. Uma imagem mapa é uma imagem com áreas clicaveis.</p> 
+
+        <p>A atributo obrigatorio de nome da tag &lt;map&gt; é associado com o atributo usemap da &lt;img&gt; e cria uma relação entre a imagem e o mapa.</p>
+
+        <p>Os elementos do &lt;map&gt; contem um número dos elementos &lt;area&gt;, que define as áreas clicaveis.</p>
+    </section>
+
+    <!-- Atributos -->
+    <section class="attributes">
+        <h2>Atributos</h2>
+        <table>
+            <thead>
+                <th>Atributo</th>
+                <th>Valor</th>
+                <th>Descrição</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>name</td>
+                    <td>nome</td>
+                    <td>Obrigatório. Especifica o nome da imagem mapa.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Essa tag também suporta os atributos globais e de eventos.</p>
+    </section>
+
+    <!-- Exemplo -->
+    <section class="example">
+        <h2>Exemplos</h2>
+        <pre>
+            <code class="html-code">
+                &lt;img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap"&gt;
+
+                &lt;map name="planetmap"&gt;
+                  &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt;
+                  &lt;area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury"&gt;
+                  &lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"&gt;
+                &lt;/map&gt;
+            </code>
+        </pre>
+    </section>
+</body>
+
+</html>
