@@ -6,19 +6,17 @@ main {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-
+    padding: 20px;
+    background-color: #010409;
 }
 
 section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     font-family: 'Source Code Pro', monospace;
-    background-color: #010409;
-}
-
-.conteudo {
-    background-color: #010409;
 }
 
 * {
@@ -52,10 +50,14 @@ img {
     font-weight: bold;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
-    margin-left: 5%;
-    margin-right: 15%;
-    margin-bottom: 5%;
+}
+
+.tagBt.b2 {
+    display: none;
+}
+
+.teamBt.b2 {
+    display: none;
 }
 
 .teamBt {
@@ -64,8 +66,6 @@ img {
     font-weight: bold;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
-    margin-left: 5%;
 }
 
 p {
@@ -95,4 +95,47 @@ a:active {
     color: blue;
     text-decoration: underline;
     background-color: #000000;
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        max-height: 100vh;
+        grid-template-columns: none;
+        grid-template-rows: 30% 70%;
+    }
+    .titulo {
+        text-align: center;
+    }
+    section {
+        justify-content: center;
+        align-content: center;
+    }
+    .btns {
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .section-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .tagBt.b2 {
+        display: initial;
+        margin: 1em 0;
+        font-size: 1.2em;
+    }
+    
+    .teamBt.b2 {
+        display: initial;
+        margin: 1em 0;
+        font-size: 1.2em;
+    }
+    .tagBt.b1 {
+        display: none;
+    }
+    .teamBt.b1 {
+        display: none;
+    }
 }
