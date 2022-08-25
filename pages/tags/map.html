@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag map</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/css/navfooter.css">
+        <link rel="stylesheet" href="../style/css/tag.css">   
 
-<body>
-    <!-- Definição e uso -->
+        <title>Tag map</title>
+    </head>
 
-    <section class="definition">
-        <p>A tag &lt;map&gt; é usada para definir uma imagem mapa. Uma imagem mapa é uma imagem com áreas clicaveis.</p> 
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">&ltHtml/&gt</div>
+                <ul class="navbar-options">
+                    <li class="navbar-options-item"><a href="../index.html">HOME</a></li>
+                    <li class="navbar-options-item"><a href="../referencias.html">TAGS</a></li>
+                    <li class="navbar-options-item"><a href="../sobre.html">SOBRE NÓS</a> </li>
+                </ul>
+            </nav>
+        </header>
 
-        <p>A atributo obrigatorio de nome da tag &lt;map&gt; é associado com o atributo usemap da &lt;img&gt; e cria uma relação entre a imagem e o mapa.</p>
+        <main>
+            <h1 class="title">Tag &lt;map/&gt;</h1> 
 
-        <p>Os elementos do &lt;map&gt; contem um número dos elementos &lt;area&gt;, que define as áreas clicaveis.</p>
-    </section>
+            <!-- Definição e uso -->
 
-    <!-- Atributos -->
-    <section class="attributes">
-        <h2>Atributos</h2>
-        <table>
-            <thead>
-                <th>Atributo</th>
-                <th>Valor</th>
-                <th>Descrição</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>name</td>
-                    <td>nome</td>
-                    <td>Obrigatório. Especifica o nome da imagem mapa.</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Essa tag também suporta os atributos globais e de eventos.</p>
-    </section>
+            <section class="definition">
+                <p>A tag &lt;map&gt; é usada para definir uma imagem mapa. Uma imagem mapa é uma imagem com áreas clicaveis.</p> 
 
-    <!-- Exemplo -->
-    <section class="example">
-        <h2>Exemplos</h2>
-        <pre>
+                <p>A atributo obrigatorio de nome da tag &lt;map&gt; é associado com o atributo usemap da &lt;img&gt; e cria uma relação entre a imagem e o mapa.</p>
+
+                <p>Os elementos do &lt;map&gt; contem um número dos elementos &lt;area&gt;, que define as áreas clicaveis.</p>
+            </section>
+
+            <!-- Atributos -->
+            <section class="attributes">
+                <h2>Atributos</h2>
+                <table>
+                    <thead>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>name</td>
+                            <td>nome</td>
+                            <td>Obrigatório. Especifica o nome da imagem mapa.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Essa tag também suporta os atributos globais e de eventos.</p>
+            </section>
+
+            <!-- Exemplo -->
+            <section class="example">
+                <h2>Exemplos</h2>
+                <pre>
             <code class="html-code">
                 &lt;img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap"&gt;
 
@@ -52,8 +69,13 @@
                   &lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"&gt;
                 &lt;/map&gt;
             </code>
-        </pre>
-    </section>
-</body>
+                </pre>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2022 - IFNMG</p>
+        </footer>
+    </body>
 
 </html>
