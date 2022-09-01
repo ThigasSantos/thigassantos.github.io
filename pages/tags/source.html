@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/css/navfooter.css">
+    <link rel="stylesheet" href="../../style/css/tag.css">
+    
+    <title>Tag source</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">&ltHtml/&gt</div>
+            <ul class="navbar-options">
+                <li class="navbar-options-item"><a href="../../index.html">HOME</a></li>
+                <li class="navbar-options-item"><a href="../referencias.html">TAGS</a></li>
+                <li class="navbar-options-item"><a href="../sobre.html">SOBRE NÓS</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    <h1 class="title">Tag &lt;source/&gt;</h1>  
+
+    <!-- Definição e uso -->
+    <section class="definition">
+        <h2>Definição</h2>
+        <p>A tag &lt;source&gt; é usado para especificar vários recursos de mídia para elementos de mídia, como &lt;video&gt;, &lt;audio&gt; e &lt;picture&gt;.</p> 
+
+        <p>A tag &lt;source&gt; permite especificar arquivos alternativos de vídeo/áudio/imagem que o navegador pode escolher, com base no suporte do navegador ou na largura da janela de visualização. O navegador escolherá o primeiro &lt;source&gt; que ele suporta.</p>
+    </section>
+
+    <!-- Atributos -->
+    <section class="attributes">
+        <h2>Atributos</h2>
+        <section class="attributes">
+            <h2>Atributos</h2>
+            <table>
+                <thead>
+                    <th>Atributo</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>media</td>
+                        <td>media_query</td>
+                        <td>Aceita qualquer consulta de mídia válida que normalmente seria definida em um CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>sizes</td>
+                        <td> </td>
+                        <td>Especifica tamanhos de imagem para diferentes layouts de página.</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td><i>URL</i></td>
+                        <td>Necessário quando a tag é usada em &lt;audio&gt; e &lt;video&gt;. Especifica o URL do arquivo de mídia.</td>
+                    </tr>
+                    <tr>
+                        <td>srcset</td>
+                        <td><i>URL</i></td>
+                        <td>Necessário quando a tag é usada em &lt;picture&gt;. Especifica a URL da imagem a ser usada em diferentes situações.</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td><i>MIME-type</i></td>
+                        <td>Especifica o tipo MIME do recurso.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Essa tag também suporta os atributos globais e de eventos.</p>
+        </section>
+
+        <p>Essa tag suporta os atributos globais e de eventos.</p>
+    </section>
+
+    <!-- Exemplo -->
+    <section class="example">
+        <h2>Exemplos</h2>
+        <p>Use a tag &lt;source&gt; com &lt;video&gt; para executar um vídeo.</p>
+        <pre>
+            <code>
+            &lt;video width="320" height="240" controls&gt;
+                &lt;source src="movie.mp4" type="video/mp4"&gt;    
+            &lt;/video&gt;    
+            </code>
+        </pre>
+        
+    </section>
+</main>
+<footer>
+    <p>&copy; 2022 - IFNMG</p>
+</footer>
+</body>
+</html>
