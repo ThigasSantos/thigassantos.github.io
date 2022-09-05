@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style/css/navfooter.css">
+        <link rel="stylesheet" href="../../style/css/tag.css">   
+
+        <title>Tag video</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">&ltHtml/&gt</div>
+                <ul class="navbar-options">
+                    <li class="navbar-options-item"><a href="../../index.html">HOME</a></li>
+                    <li class="navbar-options-item"><a href="../referencias.html">TAGS</a></li>
+                    <li class="navbar-options-item"><a href="../sobre.html">SOBRE NÓS</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="title">Tag &lt;video/&gt;</h1> 
+
+            <!-- Definição e uso -->
+
+            <section class="definition">
+                <h2>Definição</h2>
+                <p>A &lt;video> tag é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.</p>
+                <p>A &lt;video> tag contém uma ou mais &lt;source> tags com diferentes origens de vídeo. O navegador escolherá a primeira fonte que ele suporta.</p>
+                <p>O texto entre as tags &lt;video> e &lt;/video> só será exibido em navegadores que não suportam o elemento &lt;video>.</p>
+                <p>Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG. </p>       
+            </section>
+
+            <!-- Atributos -->
+            <section class="attributes">
+                <h2>Atributos</h2>
+                <table>
+                    <thead>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>autoplay</td>
+                            <td>autoplay</td>
+                            <td>Especifica que o vídeo começará a ser reproduzido assim que estiver pronto</td>
+                        </tr>
+                        <tr>
+                            <td>controls</td>
+                            <td>controls</td>
+                            <td>Especifica que os controles de vídeo devem ser exibidos (como um botão de reprodução/pausa, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>pixels</td>
+                            <td>Define a altura do player de vídeo</td>
+                        </tr>
+                        <tr>
+                            <td>loop</td>
+                            <td>loop</td>
+                            <td>Especifica que o vídeo será reiniciado sempre que terminar</td>
+                        </tr>
+                        <tr>
+                            <td>muted</td>
+                            <td>muted</td>
+                            <td>Especifica que a saída de áudio do vídeo deve ser silenciada</td>
+                        </tr>
+                        <tr>
+                            <td>poster</td>
+                            <td>URL</td>
+                            <td>Especifica uma imagem a ser exibida durante o download do vídeo ou até que o usuário pressione o botão de reprodução</td>
+                        </tr>
+                        <tr>
+                            <td>preload</td>
+                            <td>auto<br>metadata<br>none</td>
+                            <td>Especifica se e como o autor acha que o vídeo deve ser carregado quando a página for carregada</td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>Especifica o URL do arquivo de vídeo</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>piexls</td>
+                            <td>Define a largura do player de vídeo</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Essa tag também suporta os atributos globais e de eventos.</p>
+            </section>
+
+            <!-- Exemplo -->
+            <section class="example">
+                <h2>Exemplos</h2>
+                <pre>
+            <code class="html-code">
+                &lt;video width="320" height="240" controls>
+                  &lt;source src="movie.mp4" type="video/mp4">
+                  &lt;source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                &lt;/video>
+            </code>
+                </pre>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2022 - IFNMG</p>
+        </footer>
+    </body>
+
+</html>
