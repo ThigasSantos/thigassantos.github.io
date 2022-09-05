@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style/css/navfooter.css">
+        <link rel="stylesheet" href="../../style/css/tag.css">   
+
+        <title>Tag datalist</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">&ltHtml/&gt</div>
+                <ul class="navbar-options">
+                    <li class="navbar-options-item"><a href="../../index.html">HOME</a></li>
+                    <li class="navbar-options-item"><a href="../referencias.html">TAGS</a></li>
+                    <li class="navbar-options-item"><a href="../sobre.html">SOBRE NÓS</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="title">Tag &lt;datalist&gt;</h1> 
+
+            <!-- Definição e uso -->
+            <section class="definition">
+                <h2>Definição</h2>
+                <p>A &lt;datalist> tag especifica uma lista de opções predefinidas para um elemento &lt;input>.</p>
+                <p>A &lt;datalist> tag é usada para fornecer um recurso de "autocomplete" para elementos &lt;input>. Os usuários verão uma lista suspensa de opções predefinidas à medida que inserem dados.</p>
+                <p>O &lt;datalist> atributo id do elemento deve ser igual ao atributo list do elemento &lt;input> (isso os une). </p>                 
+            </section>
+
+            <!-- Atributos -->
+            <section class="attributes">
+                <h2>Atributos</h2>
+
+                <p>Essa tag suporta os atributos globais e de eventos.</p>
+            </section>
+
+            <!-- Exemplo -->
+            <section class="example">
+                <h2>Exemplos</h2>
+                <pre>
+                    <code class="html-code">
+                        &lt;label for="browser">Choose your browser from the list:&lt;/label>
+                        &lt;input list="browsers" name="browser" id="browser">
+
+                        &lt;datalist id="browsers">
+                          &lt;option value="Edge">
+                          &lt;option value="Firefox">
+                          &lt;option value="Chrome">
+                          &lt;option value="Opera">
+                          &lt;option value="Safari">
+                        &lt;/datalist>
+                    </code>
+                </pre>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2022 - IFNMG</p>
+        </footer>
+    </body>
+
+</html>
