@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style/css/navfooter.css">
+        <link rel="stylesheet" href="../../style/css/tag.css">   
+
+        <title>Tag colgroup</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">&ltHtml/&gt</div>
+                <ul class="navbar-options">
+                    <li class="navbar-options-item"><a href="../../index.html">HOME</a></li>
+                    <li class="navbar-options-item"><a href="../referencias.html">TAGS</a></li>
+                    <li class="navbar-options-item"><a href="../sobre.html">SOBRE NÓS</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="title">Tag &lt;colgroup/&gt;</h1> 
+
+            <!-- Definição e uso -->
+
+            <section class="definition">
+                <h2>Definição</h2>
+                <p>A &lt;colgroup> tag especifica um grupo de uma ou mais colunas em uma tabela para formatação.</p>
+                <p>A &lt;colgroup> tag é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.</p>
+                <p><b>Observação:</b> a &lt;colgroup> tag deve ser filha de um elemento &lt;table>, após qualquer elemento &lt;caption> e antes de qualquer elemento &lt;thead>, &lt;tbody>, &lt;tfoot> e &lt;tr>.</p>
+                <p><b>Dica:</b> Para definir diferentes propriedades para uma coluna dentro de um &lt;colgroup>, use a tag &lt;col> dentro da &lt;colgroup>tag. </p>          
+            </section>
+
+            <!-- Atributos -->
+            <section class="attributes">
+                <h2>Atributos</h2>
+                <table>
+                    <thead>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>span</td>
+                            <td>number</td>
+                            <td>Especifica o número de colunas que um grupo de colunas deve abranger.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Essa tag também suporta os atributos globais e de eventos.</p>
+            </section>
+
+            <!-- Exemplo -->
+            <section class="example">
+                <h2>Exemplos</h2>
+                <pre>
+            <code class="html-code">
+                &lt;table>
+                    &lt;colgroup>
+                        &lt;col span="2" style="background-color:red">
+                        &lt;col style="background-color:yellow">
+                    &lt;/colgroup>
+                    &lt;tr>
+                        &lt;th>ISBN&lt;/th>
+                        &lt;th>Title&lt;/th>
+                        &lt;th>Price&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td>3476896&lt;/td>
+                        &lt;td>My first HTML&lt;/td>
+                        &lt;td>$53&lt;/td>
+                    &lt;/tr>
+                &lt;/table>
+            </code>
+                </pre>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2022 - IFNMG</p>
+        </footer>
+    </body>
+
+</html>
