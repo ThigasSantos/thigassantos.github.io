@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+li {
+  list-style: none;
+}
+
 section{
   display: flex;
   flex-direction: column; 
@@ -68,7 +72,7 @@ section {
   line-height: 1.8;
 }
 
-section.definition > p, section.example > p {
+section.definition > p, section.definition > ul, section.example > p {
   padding-left: 1em;
 }
 
