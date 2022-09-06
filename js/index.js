@@ -26,10 +26,12 @@ document.querySelectorAll('pre > code').forEach((el) => {
 })
 
 document.querySelectorAll('p').forEach((el) => {
-    const c = document.createElement('code')
-    c.classList.add('language-html')
-    c.textContent = el.textContent;
-    c.style.fontFamily = "Arial, Helvetica, sans-serif";
-    el.innerHTML = ""
-    el.appendChild(c)
+    if (!el.classList.contains('especial')){
+        const c = document.createElement('code')
+        c.classList.add('language-html')
+        c.textContent = el.textContent;
+        c.style.fontFamily = "Arial, Helvetica, sans-serif";
+        el.innerHTML = ""
+        el.appendChild(c)
+    }
 })
