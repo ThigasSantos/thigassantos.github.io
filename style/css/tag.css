@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans&family=Source+Code+Pro:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
 
+:root > body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 section{
   display: flex;
@@ -17,8 +21,9 @@ section{
     color: white;
 }
 
+/* TABLE */
 table{
-    width: calc(100% - 2px);
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     color: rgb(255, 255, 255);
@@ -50,3 +55,40 @@ th{
     background-color: #8A2BE2;
     color: white;
   }
+
+h2 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+section {
+  line-height: 1.8;
+}
+
+section.definition > p, section.example > p {
+  padding-left: 1em;
+}
+
+
+section.example > pre {
+  background-color: #0D1117;
+  padding: 0;
+  margin-top: 1em;
+  overflow: auto;
+}
+
+section.example > pre::before {
+  display: flex;
+  max-width: 100%;
+  background-color: #8A2BE2;
+  font-size: 1.3em;
+  font-weight: bolder;
+  content: "HTML";
+  padding: 0.1em 1em;
+}
+
+/*prism css*/
+code[class*=language-],pre[class*=language-]{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.4em .8em;margin:.5em 0;overflow:auto;}code[class*=language-]{color:#fff}:not(pre)>code[class*=language-]{padding:.2em;border-radius:.3em;box-shadow:none;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#aaa}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#FB6462}.token.attr-name,.token.builtin,.token.char,.token.selector,.token.string{color:#C763F3}.language-css .token.string,.token.entity,.token.inserted,.token.operator,.token.url,.token.variable{color:#9acd32}.token.atrule,.token.attr-value,.token.keyword{color:#82FD7D}.token.important,.token.regex{color:orange}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix){background-color:rgba(255,0,0,.3);display:inline}pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix){background-color:rgba(0,255,128,.3);display:inline}
